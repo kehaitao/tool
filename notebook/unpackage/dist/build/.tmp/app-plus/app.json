@@ -1,0 +1,67 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/component/component",
+    "pages/details/details",
+    "pages/details/videoDetails"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#669933",
+    "backgroundColor": "#669933",
+    "style": {
+      "app-plus": {
+        "background": "#669933"
+      }
+    }
+  },
+  "tabBar": {
+    "color": "#C0C4CC",
+    "selectedColor": "#336633",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/schedule.png",
+        "selectedIconPath": "static/schedule-current.png",
+        "text": "日程"
+      },
+      {
+        "pagePath": "pages/nvue/nvue",
+        "iconPath": "static/tab-home.png",
+        "selectedIconPath": "static/tab-home-current.png",
+        "text": "闹钟"
+      },
+      {
+        "pagePath": "pages/component/component",
+        "iconPath": "static/tab-home.png",
+        "selectedIconPath": "static/tab-home-current.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "nvue": {
+    "pages": {
+      "pages/nvue/nvue.html": {
+        "window": {
+          "usingComponents": {},
+          "navigationBarTitleText": "首页",
+          "titleNView": false,
+          "navigationBarTextStyle": "white",
+          "bounce": "none"
+        },
+        "nvue": true
+      }
+    }
+  },
+  "nvueCompiler": "uni-app",
+  "renderer": "auto",
+  "splashscreen": {
+    "alwaysShowBeforeRender": true,
+    "autoclose": false
+  },
+  "appname": "记事本",
+  "compilerVersion": "2.4.2",
+  "usingComponents": {}
+}

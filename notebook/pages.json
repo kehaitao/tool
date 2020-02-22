@@ -1,0 +1,103 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/index/index",
+		    "style" : {
+		    	"navigationBarTitleText": "日程",
+		    	"app-plus": {
+		    		"bounce": "none"
+		    	}
+		    }
+		}
+	    ,{
+            "path" : "pages/component/component",
+            "style" : {
+				"navigationBarTitleText" : "组件使用示例",
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+        },
+
+		{
+		    "path" : "pages/details/details",
+		    "style" : {
+				"navigationBarTitleText" : "详情",
+				"app-plus": {
+					"navigationBarTextStyle": "white",
+					"bounce": "none"
+				}
+			}
+		},
+		{
+		    "path" : "pages/details/videoDetails",
+		    "style" : {
+				"navigationBarTitleText" : "",
+				"app-plus": {
+					"titleNView": false,
+					"navigationBarTextStyle": "white",
+					"bounce": "none"
+				}
+			}
+		}
+        ,{
+            "path" : "pages/nvue/nvue",
+            "style" : {
+            	"navigationBarTitleText" : "首页",
+            	"app-plus": {
+            		// #ifdef APP-PLUS
+            		"titleNView": false,
+            		"navigationBarTextStyle": "white",
+            		// #endif
+            		"bounce": "none"
+            	}
+            }
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#669933",
+		"backgroundColor": "#669933",
+		"style": {    
+		    "app-plus": {    
+		        "background":"#669933"  
+		    }    
+		}
+	},
+	"tabBar" : {
+	    "color" : "#C0C4CC",
+	    "selectedColor" : "#336633",
+	    "borderStyle" : "black",
+	    "backgroundColor" : "#ffffff",
+	    "list" : [
+	        {
+	            "pagePath" : "pages/index/index",
+	            "iconPath" : "static/schedule.png",
+	            "selectedIconPath" : "static/schedule-current.png",
+	            "text" : "日程"
+	        },
+			{
+			    "pagePath" : "pages/nvue/nvue",
+			    "iconPath" : "static/tab-home.png",
+			    "selectedIconPath" : "static/tab-home-current.png",
+			    "text" : "闹钟"
+			},
+			 {
+			    "pagePath" : "pages/component/component",
+			    "iconPath" : "static/tab-home.png",
+			    "selectedIconPath" : "static/tab-home-current.png",
+			    "text" : "我的"
+			}
+	    ]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
